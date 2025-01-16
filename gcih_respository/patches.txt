@@ -4,3 +4,7 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+gcih_respository.patches.add_customer_field_to_student
+gcih_respository.patches.add_student_id_to_customer
+gcih_respository.patches.add_student_id_to_patient
+gcih_respository.patches.add_student_id_to_student

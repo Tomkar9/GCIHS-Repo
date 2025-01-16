@@ -1,10 +1,9 @@
 app_name = "gcih_respository"
-app_title = "Gcihs Repo"
-app_publisher = "elliot "
-app_description = "Gcihs repo for test "
-app_email = "elliot@gcihs.edu.gh"
-app_license = "mit"
-# required_apps = []
+app_title = "Gcih Respository"
+app_publisher = "Gcih"
+app_description = "Gcih"
+app_email = "gcih@gmail.com"
+app_license = "MIT"
 
 # Includes in <head>
 # ------------------
@@ -28,7 +27,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Customer": "public/js/gci_customer_validation.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -114,21 +115,23 @@ app_license = "mit"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+    "Customer": "gcih_respository.overrides.gcihs_customer.GCIHSCustomer",
+    "Student": "gcih_respository.overrides.gcihs_student.GCIHSStudent"
+}
+
+# Override naming series for specific doctypes
+override_doctype_naming_series = {
+    "Customer": ["", "CUST-.YYYY.-"]  # Empty string first for Student customers
+}
 
 # Document Events
 # ---------------
-# Hook on document methods and events
-
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Student": {
+        "after_insert": "gcih_respository.doc_events.gcihs_student.gcihs_handle_student_creation"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -226,4 +229,9 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+# }
 
+# After migration, set up custom fields
+after_migrate = [
+    "gcih_respository.custom_fields.setup_custom_fields"
+]
