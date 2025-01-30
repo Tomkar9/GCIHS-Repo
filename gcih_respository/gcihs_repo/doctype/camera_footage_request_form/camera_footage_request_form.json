@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-29 11:48:54.536151",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tep5",
+  "student_name",
+  "student_class",
+  "column_break_czsx",
+  "student_id",
+  "student_initials",
+  "incident_details_section",
+  "incident_type",
+  "timeframe_of_incident",
+  "column_break_vnrr",
+  "date_of_incident",
+  "location_of_incident",
+  "report_of_the_incident_section",
+  "short_report_on_the_incident"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tep5",
+   "fieldtype": "Section Break",
+   "label": "STUDENT DETAILS"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "STUDENT NAME",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "STUDENT CLASS",
+   "options": "Classes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_czsx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STUDENT ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_initials",
+   "fieldtype": "Data",
+   "label": "STUDENT INITIALS"
+  },
+  {
+   "fieldname": "incident_details_section",
+   "fieldtype": "Section Break",
+   "label": "INCIDENT DETAILS"
+  },
+  {
+   "fieldname": "incident_type",
+   "fieldtype": "Data",
+   "label": "INCIDENT TYPE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timeframe_of_incident",
+   "fieldtype": "Time",
+   "label": "TIMEFRAME OF INCIDENT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vnrr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_incident",
+   "fieldtype": "Date",
+   "label": "DATE OF INCIDENT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location_of_incident",
+   "fieldtype": "Data",
+   "label": "LOCATION OF INCIDENT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_of_the_incident_section",
+   "fieldtype": "Section Break",
+   "label": "REPORT OF THE INCIDENT"
+  },
+  {
+   "fieldname": "short_report_on_the_incident",
+   "fieldtype": "Long Text",
+   "label": "SHORT REPORT ON THE INCIDENT",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-29 12:34:10.047790",
+ "modified_by": "Administrator",
+ "module": "Gcihs Repo",
+ "name": "CAMERA FOOTAGE REQUEST FORM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

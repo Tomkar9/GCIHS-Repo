@@ -130,6 +130,13 @@ override_doctype_naming_series = {
 doc_events = {
     "Student": {
         "after_insert": "gcih_respository.doc_events.gcihs_student.gcihs_handle_student_creation"
+    },
+    "Program Enrollment": {
+        "before_save": "gcih_respository.gcihs_repo.gcihs_student_promotion.handle_program_enrollment_save",
+        "after_insert": "gcih_respository.gcihs_repo.gcihs_student_promotion.auto_submit_enrollment"
+    },
+    "Program Enrollment Tool": {
+        "enroll_students": "gcih_respository.gcihs_repo.gcihs_student_promotion.gcihs_after_bulk_enrollment"
     }
 }
 

@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-29 13:03:08.412992",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_7lgh",
+  "name1"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7lgh",
+   "fieldtype": "Section Break",
+   "label": "PRINCIPALS"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "NAME"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-29 13:03:55.984784",
+ "modified_by": "Administrator",
+ "module": "Gcihs Repo",
+ "name": "PRINCIPALS",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

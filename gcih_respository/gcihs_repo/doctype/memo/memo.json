@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-23 11:19:27.882873",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_eswg",
+  "from",
+  "to",
+  "cc",
+  "ref",
+  "date",
+  "subject",
+  "section_break_defm",
+  "content"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_eswg",
+   "fieldtype": "Section Break",
+   "label": "Addresses"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "label": "TO",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Link",
+   "label": "CC",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "label": "REF"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "DATE"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "SUBJECT"
+  },
+  {
+   "fieldname": "section_break_defm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "label": "CONTENT"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "label": "FROM",
+   "options": "Designation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-29 11:07:06.951526",
+ "modified_by": "Administrator",
+ "module": "Gcihs Repo",
+ "name": "MEMO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
